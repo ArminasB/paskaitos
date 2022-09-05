@@ -1,34 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    width: 70%;
-    margin: 0 auto;
     background-color: rgb(230, 230, 211);
 }
 
-nav {
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+}
+
+header,
+article a {
     background-color: rgb(11, 70, 42);
 }
 
-nav img {
+header img {
     width: 100px;
 }
 
 nav ul {
     display: flex;
     align-items: center;
-    list-style-type: none;
+    list-style: none;
 }
-
-nav li {
+nav ul li {
     margin-left: 50px;
 }
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: inherit;
 }
 
 main {
@@ -36,27 +46,18 @@ main {
     background-color: white;
 }
 
-article {
+body article {
     margin-top: 30px;
     text-align: justify;
-
 }
 
 article:first-of-type {
-    flex: 1;
-}
-
-
-article:last-of-type {
-    flex: 2;
-}
-
-article > * {
-    margin: 20px;
+    margin-right: 20px;
 }
 
 article img {
     margin-top: 0;
+    margin: 0px 20px 20px 0;
     width: 200px;
     float: left;
 }
@@ -65,16 +66,17 @@ article ul {
     margin-left: 30px;
 }
 
-input[type="submit"] {
-    background-color: rgb(11, 70, 42);
-    color: white;
-    border: 0;
-    padding: 15px;
-    float: right;
+article nav {
+    display: flex;
+    justify-content: right;
 }
 
-footer {
-    margin-top: 10px;
+article a {
+    color: white;
+    padding: 15px;
+}
+
+footer p{
     text-align: center;
     color: rgb(11, 70, 42);
 }
