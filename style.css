@@ -15,16 +15,22 @@ h2 {
     margin: 0 auto;
 }
 
+.flex-box {
+    display: flex;
+    justify-content: space-between;
+}
+
 header,
 footer {
-    background-color: rgb(206, 166, 166);
+    background-color: #dcbeb4;
     padding: 20px;
 }
 
-header div{
-    display: flex;
-    justify-content: space-between;
+header div,
+header nav ul {
     align-items: center;
+    gap: 50px;
+    padding: 0;
 }
 
 header img {
@@ -32,16 +38,7 @@ header img {
 }
 
 header nav ul {
-    display: flex;
-    align-items: center;
-}
-
-header nav ul {
     margin: 0;
-}
-
-header nav ul li {
-    margin-left: 30px;
 }
 
 ul li {
@@ -73,7 +70,7 @@ main article {
 
 .article-img {
     width: 200px;
-    margin-left: 5px;
+    margin-left: 10px;
     float: right;
 }
 
@@ -88,8 +85,7 @@ main article section {
 }
 
 main section div.flex-box {
-    display: flex;
-    justify-content: space-between;
+    gap: 20px;
 }
 
 main article section ul {
@@ -98,10 +94,6 @@ main article section ul {
     padding: 20px;
     margin: 0;
     flex: 1;
-}
-
-main article section ul:first-of-type {
-    margin-right: 20px;
 }
 
 main article section ul li {
@@ -114,8 +106,7 @@ main article section ul li a {
 }
 
 .round-img-group {
-    display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     padding-bottom:  0;
 }
 
