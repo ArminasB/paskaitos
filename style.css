@@ -12,7 +12,7 @@ body{
     margin: 0 auto;
 }
 
-.flex-box {
+.layout {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -25,11 +25,13 @@ footer {
 }
 
 header div,
-header nav ul,
-.round-img-group {
+header nav ul {
     align-items: center;
-    gap: 50px;
+}
+
+header nav ul {
     padding: 0;
+    gap: 50px;
 }
 
 header img {
@@ -62,7 +64,6 @@ h1 {
     padding: 40px 0 40px 0;
 }
 
-
 main article {
     border-bottom: 1px solid black;
 }
@@ -79,12 +80,11 @@ main article p {
     margin-bottom: 0;
 }
 
-main article section,
-.round-img-group {
+main article section {
     padding: 30px 0 30px 0;
 }
 
-main section div.flex-box {
+main section div.layout {
     gap: 20px;
 }
 
@@ -103,6 +103,12 @@ main article section ul li {
 
 main article section ul li a {
     color: black;
+}
+
+.round-img-group {
+    padding-top: 30px;
+    padding-bottom: 0;
+    gap: 50px;
 }
 
 .round-img {
