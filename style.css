@@ -2,81 +2,130 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: rgb(230, 230, 211);
+body{
+    margin: 0;
+    font-family: sans-serif;
 }
 
-.wrapper {
+.wrapper,
+.round-img-group,
+h1,
+h2 {
     max-width: 1000px;
     margin: 0 auto;
+}
+
+header,
+footer {
+    background-color: rgb(206, 166, 166);
     padding: 20px;
 }
 
-header {
+header div{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header,
-article a {
-    background-color: rgb(11, 70, 42);
-}
-
 header img {
-    width: 100px;
+    width: 50px;
 }
 
-nav ul {
+header nav ul {
     display: flex;
     align-items: center;
-    list-style: none;
-}
-nav ul li {
-    margin-left: 50px;
 }
 
-nav a {
-    text-decoration: none;
-    color: inherit;
+header nav ul {
+    margin: 0;
 }
 
-main {
-    display: flex;
-    background-color: white;
-}
-
-body article {
-    margin-top: 30px;
-    text-align: justify;
-}
-
-article:first-of-type {
-    margin-right: 20px;
-}
-
-article img {
-    margin-top: 0;
-    margin: 0px 20px 20px 0;
-    width: 200px;
-    float: left;
-}
-
-article ul {
+header nav ul li {
     margin-left: 30px;
 }
 
-article nav {
-    display: flex;
-    justify-content: right;
+ul li {
+    list-style: none;
 }
 
-article a {
+ul li a {
+    text-decoration: none;
     color: white;
-    padding: 15px;
 }
 
-footer p{
+main {
+    background-color: #f5f5f5;
+}
+
+main article:nth-of-type(even) {
+    background-color: #faf5f0;
+}
+
+main article,
+h1 {
+    padding: 40px 0 40px 0;
+}
+
+
+main article {
+    border-bottom: 1px solid black;
+}
+
+.article-img {
+    width: 200px;
+    margin-left: 5px;
+    float: right;
+}
+
+main article p {
+    text-align: justify;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+main article section {
+    padding: 30px 0 30px 0;
+}
+
+main section div.flex-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+main article section ul {
+    border: 1px solid rgb(206, 166, 166);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0;
+    flex: 1;
+}
+
+main article section ul:first-of-type {
+    margin-right: 20px;
+}
+
+main article section ul li {
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+}
+
+main article section ul li a {
+    color: black;
+}
+
+.round-img-group {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom:  0;
+}
+
+.round-img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+footer {
     text-align: center;
-    color: rgb(11, 70, 42);
 }
