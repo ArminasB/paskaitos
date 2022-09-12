@@ -8,116 +8,147 @@ body{
 }
 
 .wrapper {
-    max-width: 1000px;
+    max-width: 960px;
     margin: 0 auto;
-}
-
-.layout {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 header,
 footer {
-    background-color: #dcbeb4;
-    padding: 20px;
+    background-color: rgb(85, 30, 30);
 }
 
-header div,
-header nav ul {
+header nav {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 5px;
+}
+
+header nav img {
+    height: 40px;
+    width: 100px;
 }
 
 header nav ul {
+    display: flex;
+    gap: 30px;
     padding: 0;
-    gap: 50px;
 }
 
-header img {
-    width: 50px;
-}
-
-header nav ul {
-    margin: 0;
-}
-
-ul li {
+nav ul li {
     list-style: none;
 }
 
-ul li a {
+nav ul li a {
     text-decoration: none;
     color: white;
+    padding: 10px 3px;
 }
 
-main {
-    background-color: #faf5f0;
+nav ul li a:focus {
+    border: 1px solid white;
+    border-radius: 5px;
 }
 
-main article:nth-of-type(odd) {
-    background-color: #f5f5f5;
+.virsutinis-img {
+    background-image: url("http://www.ucs.lt/wp-content/uploads/2016/03/Alynas-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
 }
 
-main article,
+.virsutinis-img .wrapper {
+    min-height: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
 h1 {
-    padding: 40px 0 40px 0;
+    background-color: rgba(139, 37, 37, .7);
+    color: white;
+    padding: 5px;
 }
 
-main article {
-    border-bottom: 1px solid black;
+.products {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.article-img {
-    width: 300px;
-    margin-left: 10px;
-    float: right;
+.product-card {
+    border: 1px solid rgb(83, 19, 19);
+    background-color: brown;
+    color: white;
+    text-align: center;
+    height: 300px;
+    padding: 10px;
+    margin-bottom: 4px;
+    width: calc(25% - 3px);
 }
 
-main article p {
-    text-align: justify;
-    line-height: 1.8;
-    margin-bottom: 0;
+h2 {
+    color: brown;
 }
 
-main article section {
-    padding: 30px 0 30px 0;
+.product-card>p {
+    text-align: left;
 }
 
-main section div.layout {
-    gap: 20px;
+.product-card>img {
+    height: 180px;
+    object-fit: contain;
 }
 
-main article section ul {
-    border: 1px solid  #dcbeb4;
-    border-radius: 20px;
-    padding: 20px;
-    margin: 0;
+.product-card:not(:nth-child(4n)) {
+    margin-right: 4px;
+}
+
+article:nth-of-type(2) {
+    margin-bottom: 50px;
+}
+
+.layout {
+    display: flex;
+    gap: 10px;
+}
+
+form {
+    display: flex;
     flex: 1;
+    flex-direction: column;
 }
 
-main article section ul li {
-    border-bottom: 1px solid black;
-    padding-top: 10px;
+input,
+textarea {
+    border: 1px solid lightgray;
 }
 
-main article section ul li a {
-    color: black;
+input {
+    margin-bottom: 10px;
+    padding: 10px;
 }
 
-.round-img-group {
-    padding-top: 30px;
-    padding-bottom: 0;
-    gap: 50px;
+textarea {
+    resize: vertical;
 }
 
-.round-img {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    border: 1px solid black;
+input[type="submit"] {
+    margin-top: 10px;
+    width: 150px;
+    background-color: white;
+    border: 1px solid brown;
+    color: rgb(36, 34, 33);
+}
+
+iframe {
+    flex: 1;
+    height: 400px;
 }
 
 footer {
+    padding: 10px;
+    margin-top: 10px;
     text-align: center;
+    color: white;
 }
