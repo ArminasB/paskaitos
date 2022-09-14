@@ -9,6 +9,7 @@ body{
 
 .wrapper {
     margin: 0 auto;
+    max-width: 390px;
     padding: 0 12px;
 }
 
@@ -144,6 +145,10 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+    .wrapper {
+        max-width: 810px;
+    }
+
     article {
         margin-top: 60px;
     }
