@@ -8,146 +8,245 @@ body{
 }
 
 .wrapper {
-    max-width: 960px;
     margin: 0 auto;
+    padding: 0 12px;
 }
 
-header,
-footer {
-    background-color: rgb(85, 30, 30);
+article {
+    margin-top: 40px;
+}
+
+section {
+    margin-top: 20px;
 }
 
 header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
+    position: relative;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-header nav img {
-    height: 40px;
-    width: 100px;
+.nav-bar {
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
-header nav ul {
-    display: flex;
-    gap: 30px;
-    padding: 0;
+nav img {
+    height: 50px;
 }
 
-nav ul li {
-    list-style: none;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 10px 3px;
-}
-
-.prisijungti-remelis {
-    border: 1px solid white;
-    border-radius: 5px;
+.nav-ul {
+    display: none;
 }
 
 .hero {
-    background-image: url("http://www.ucs.lt/wp-content/uploads/2016/03/Alynas-2.jpg");
+    background-image: url("https://online.vu.edu.au/sites/default/files/field/image/Easiest_countries_to_start_a_business_main_image.jpeg");
+    height: 250px;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 700px;
-}
-
-.hero .wrapper {
-    min-height: 200px;
-    height: 100%;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
 }
 
-h1 {
-    background-color: rgba(139, 37, 37, .7);
-    color: white;
+.h1-br{
+    margin: 0;
     padding: 5px;
+    color: rgba(255, 255, 255, 0.76);
+    background-color: rgba(0, 0, 0, 0.671);
 }
 
-.products {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.product-card {
-    border: 1px solid rgb(83, 19, 19);
-    background-color: brown;
-    color: white;
-    text-align: center;
-    height: 300px;
-    padding: 10px;
-    margin-bottom: 4px;
-    min-width: calc(25% - 3px);
+.h1-architects {
+    display: none;
 }
 
 h2 {
-    color: brown;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.726);
+
 }
 
-.product-card>p {
-    text-align: left;
-}
-
-.product-card>img {
-    height: 180px;
-    object-fit: contain;
-}
-
-.product-card:not(:nth-child(4n)) {
-    margin-right: 4px;
-}
-
-article:nth-of-type(2) {
-    margin-bottom: 50px;
-}
-
-.layout {
+.project-image-card {
+    background-image: url("https://media.istockphoto.com/photos/dream-home-luxury-house-success-suburban-house-picture-id1281554848?b=1&k=20&m=1281554848&s=170667a&w=0&h=s7X81b-3hfEGTYVkFKDOG7ZDySs57Tpw_WAETXi5xnQ=");
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
-    gap: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.project-image-card p {
+    margin: 0;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+.team-member {
+    margin-top: 30px;
+}
+
+.team-member img {
+    width: 100%;
+}
+
+.occupation {
+    font-weight: 100;
+    color: rgba(128, 128, 128, 0.582);
+}
+
+.contact-button {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.404);
 }
 
 .form-layout {
     display: flex;
-    flex: 1;
     flex-direction: column;
-    gap: 10px
+    gap: 10px;
 }
 
-input,
-textarea {
-    border: 1px solid lightgray;
+.input-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
-input {
-    padding: 10px;
+.input-layout input {
+    padding: 5px;
+
 }
 
-textarea {
-    resize: vertical;
-}
-
-input[type="submit"] {
-    width: 150px;
-    background-color: white;
-    border: 1px solid brown;
-    color: rgb(36, 34, 33);
+.form-layout button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    align-self: flex-start;
 }
 
 iframe {
-    flex: 1;
-    height: 400px;
+    margin: 20px auto;
+    border: none;
+    width: 100%;
+    height: 200px;
 }
 
 footer {
     padding: 10px;
-    margin-top: 10px;
-    text-align: center;
+    background-color: black;
     color: white;
+    text-align: center;
+    font-size: smaller;
+}
+
+@media screen and (min-width: 768px) {
+    article {
+        margin-top: 60px;
+    }
+    
+    section {
+        margin-top: 40px;
+    }
+
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-ul {
+        display: flex;
+        gap: 30px;
+    }
+
+    .nav-ul li {
+        list-style: none;
+    }
+
+    .nav-ul li a {
+        color: rgba(0, 0, 0, 0.767);
+        font-weight: 100;
+        text-decoration: none;
+    }
+
+    .hero {
+        height: 400px;
+    }
+
+    .h1-architects {
+        display: contents;
+        color: rgba(255, 255, 255, 0.76);
+    }
+
+    .project-image-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px
+    }
+
+    .project-image-card {
+        width: calc(50% - 6px);
+        margin-bottom: 0;
+    }
+
+    .team {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .team-member {
+        width: calc(50% - 6px);
+        margin-top: 6px;
+    }
+
+    iframe {
+        height: 400px;
+    }
+}
+
+@media  screen and (min-width: 1200px) {
+    .wrapper {
+        margin: 0 auto;
+        max-width: 980px;
+    }
+
+    article {
+        margin-top: 80px;
+    }
+    
+    section {
+        margin-top: 50px;
+    }
+
+    .hero {
+        height: 700px;
+    }
+
+    .project-image-group {
+        gap: 12px
+    }
+
+    .project-image-card {
+        height: 150px;
+        width: calc(25% - 9px);
+        margin-bottom: 0;
+    }
+
+    .team {
+        gap: 12px;
+    }
+
+    .team-member {
+        width: calc(25% - 9px);
+        margin-top: 6px;
+    }
+
+    iframe {
+        height: 600px;
+    }
 }
