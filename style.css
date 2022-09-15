@@ -52,12 +52,13 @@ nav img {
 .h1-br{
     margin: 0;
     padding: 5px;
-    color: rgba(255, 255, 255, 0.76);
-    background-color: rgba(0, 0, 0, 0.671);
+    color: rgba(255, 255, 255, 0.829);
+    background-color: rgba(0, 0, 0, 0.664);
 }
 
 .h1-architects {
     display: none;
+
 }
 
 h2 {
@@ -99,12 +100,13 @@ h2 {
 
 .contact-button {
     border: none;
+    min-width: fit-content;
     width: 100%;
     padding: 10px;
     background-color: rgba(128, 128, 128, 0.404);
 }
 
-.form-layout {
+.contact-form {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -118,10 +120,20 @@ h2 {
 
 .input-layout input {
     padding: 5px;
-
+    outline: none;
 }
 
-.form-layout button {
+::placeholder {
+    color: rgba(0, 0, 0, 0.808);
+    opacity: 1;
+}
+
+.input-layout input:focus {
+    border: none;
+    background: linear-gradient(180deg, rgba(224, 224, 224, 0.178) 0%, rgba(196, 196, 196, 0.219) 35%, rgba(27, 25, 32, 0.137) 100%);
+}
+
+.contact-form button {
     background-color: black;
     color: white;
     border: none;
@@ -176,8 +188,21 @@ footer {
         color: rgba(0, 0, 0, 0.767);
         font-weight: 100;
         text-decoration: none;
+        padding: 10px 5px;
     }
 
+    .projects-link:hover {
+        background: linear-gradient(79deg, rgba(165, 17, 251, 0.349) 0%, rgba(237, 73, 196, 0.301) 45%, rgba(185, 33, 13, 0.281) 100%);
+    }
+
+    .about-link:hover {
+        background: linear-gradient(79deg, rgba(251, 68, 17, 0.315) 0%, rgba(226, 237, 73, 0.301) 45%, rgba(102, 185, 13, 0.288) 100%);
+    }
+
+    .contact-link:hover {
+        background: linear-gradient(79deg, rgba(146, 251, 17, 0.281) 0%, rgba(73, 237, 139, 0.247) 45%, rgba(13, 116, 185, 0.329) 100%);
+    }
+    
     .hero {
         height: 400px;
     }
@@ -194,6 +219,7 @@ footer {
     }
 
     .project-image-card {
+        height: 250px;
         width: calc(50% - 6px);
         margin-bottom: 0;
     }
@@ -216,7 +242,6 @@ footer {
 
 @media  screen and (min-width: 1200px) {
     .wrapper {
-        margin: 0 auto;
         max-width: 980px;
     }
 
@@ -232,14 +257,9 @@ footer {
         height: 700px;
     }
 
-    .project-image-group {
-        gap: 12px
-    }
-
     .project-image-card {
         height: 150px;
         width: calc(25% - 9px);
-        margin-bottom: 0;
     }
 
     .team {
@@ -248,7 +268,6 @@ footer {
 
     .team-member {
         width: calc(25% - 9px);
-        margin-top: 6px;
     }
 
     iframe {
