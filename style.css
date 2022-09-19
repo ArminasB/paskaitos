@@ -85,6 +85,14 @@ h2 {
     color: white;
 }
 
+.project-image-card:hover {
+    -ms-transform: scale(1.3); /* IE 9 */
+    -webkit-transform: scale(1.3); /* Safari 3-8 */
+    transform: scale(1.3);
+    transition : 1s;
+  }
+  
+
 .team-member {
     margin-top: 30px;
 }
