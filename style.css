@@ -270,10 +270,6 @@ footer {
         width: calc(25% - 9px);
     }
 
-    .team {
-        gap: 12px;
-    }
-
     .team-member {
         width: calc(25% - 9px);
     }
