@@ -38,26 +38,27 @@ main {
     flex: 1;
 }
 
-.medium-content-card section {
-    display: flex;
-    flex: 1;
-}
-
 .big-content-card,
 .medium-content-card {
     display: flex;
     flex-direction: column;
 }
 
+.medium-content-card section,
+.small-content-card section {
+    display: flex;
+    flex: 1;
+}
+
 .big-content-card img,
 .medium-content-card img {
     width: 100%;
-    
 }
 
 .card-wrapper h3,
 .card-wrapper p {
     margin: 0;
+    flex: 1;
 }
 
 .card-wrapper {
@@ -66,11 +67,6 @@ main {
     display: flex;
     gap: 20px;
     flex-direction: column;
-}
-
-.card-wrapper h3,
-.card-wrapper p {
-    flex: 1;
 }
 
 .card-wrapper footer {
@@ -83,9 +79,9 @@ main {
 }
 
 @media screen and (min-width: 967px) {
-    .wrapper {
+    /* .wrapper {
         max-width: 1200px;
-    }
+    } */
 
     .main-layout {
         flex-direction: row;
