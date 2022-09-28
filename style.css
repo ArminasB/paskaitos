@@ -55,6 +55,10 @@ main {
     width: 100%;
 }
 
+.card-wrapper p {
+    flex: 1;
+}
+
 .card-wrapper h3,
 .card-wrapper p {
     margin: 0;
@@ -79,9 +83,9 @@ main {
 }
 
 @media screen and (min-width: 967px) {
-    /* .wrapper {
+    .wrapper {
         max-width: 1200px;
-    } */
+    }
 
     .main-layout {
         flex-direction: row;
