@@ -1,102 +1,57 @@
- * {
-    box-sizing: border-box;
-}
-
-body{
-    margin: 0;
-    font-family: sans-serif;
-}
-
 main {
-    min-height: 100vh;
-    background-color: darkgreen;
-}
-
-.wrapper {
-    padding: 30px;
-    margin: 0 auto;
-}
-
-.main-layout {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    color: white;
+    text-align: center;
     gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "oneo oneo twoo twoo"
+    "oneo oneo threeo fouro"
+    "oneb oneb twob twob"
+    "oneb oneb threeb fourb";
 }
 
-.left,
-.right,
-.small-content-card-section {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+div {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
-.big-content-card,
-.medium-content-card,
-.small-content-card {
-    background-color: aliceblue;
-    flex: 1;
+.orange {
+    background-color: tomato;
 }
 
-.big-content-card,
-.medium-content-card {
-    display: flex;
-    flex-direction: column;
+.orange.one {
+    grid-area: oneo;
 }
 
-.medium-content-card section,
-.small-content-card section {
-    display: flex;
-    flex: 1;
+.orange.two {
+    grid-area: twoo;
 }
 
-.big-content-card img,
-.medium-content-card img {
-    width: 100%;
+.orange.three {
+    grid-area: threeo;
 }
 
-.card-wrapper p {
-    flex: 1;
+.orange.four {
+    grid-area: fouro;
 }
 
-.card-wrapper h3,
-.card-wrapper p {
-    margin: 0;
-    flex: 1;
+.blue {
+    background-color: rgb(25, 109, 109);
 }
 
-.card-wrapper {
-    flex: 1;
-    padding: 20px;
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
+.blue.one {
+    grid-area: oneb;
 }
 
-.card-wrapper footer {
-    display: flex;
-    justify-content: space-between;
+.blue.two {
+    grid-area: twob;
 }
 
-.card-wrapper footer span {
-    color: grey;
+.blue.three {
+    grid-area: threeb;
 }
 
-@media screen and (min-width: 967px) {
-    .wrapper {
-        max-width: 1200px;
-    }
-
-    .main-layout {
-        flex-direction: row;
-    }
-
-    .left {
-        flex: 2;
-        
-    }
-
-    .right {
-        flex: 1;
-    }
-} 
+.blue.four {
+    grid-area: fourb;
+}
