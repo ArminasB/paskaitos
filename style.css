@@ -33,7 +33,7 @@ body {
 
 .navigation--header {
     grid-area: navigation;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
 }
 
 .navigation__logo {
@@ -47,30 +47,13 @@ body {
 .header--list {
     display: grid;
     align-items: center;
-    grid-template-columns: 5fr repeat(4, 1fr);
-    grid-template-areas: 
-    ". li1 li2 li3 li4";
+    grid-auto-flow: column;
+    grid-auto-columns: auto;
+    justify-items: end;
 }
 
 .navigation__list-item {
-    justify-self: end;
     list-style: none;
-}
-
-.list-item--position-one {
-    grid-area: li1;
-}
-
-.list-item--position-two {
-    grid-area: li2;
-}
-
-.list-item--position-three {
-    grid-area: li3;
-}
-
-.list-item--position-four {
-    grid-area: li4;
 }
 
 .navigation__list-item-link {
