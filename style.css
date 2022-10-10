@@ -207,7 +207,7 @@ body {
 
 @media screen and (max-width: 768px) {
     .body {
-        grid-template-columns: max(768px);
+        grid-template-columns: 1fr;
         grid-template-rows: 50px auto;
         grid-template-areas: 
         "header"
