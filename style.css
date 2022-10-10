@@ -48,8 +48,7 @@ body {
     display: grid;
     align-items: center;
     grid-auto-flow: column;
-    grid-auto-columns: auto;
-    justify-items: end;
+    justify-items: end; 
 }
 
 .navigation__list-item {
