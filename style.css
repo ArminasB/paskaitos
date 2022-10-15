@@ -6,35 +6,39 @@ html,
 body {
     margin: 0;
     font-family: sans-serif;
+    background-color: rgba(183, 179, 174, 0.331);
 }
 
 .section:after {
     content: "";
     position: absolute;
-    top: 1%;
+    top: 10%;
     left: 50%;
-    bottom: 20%;
-    z-index: -1;
-    border-left: 2px solid rgba(128, 128, 128, 0.496);
+    height: 70%;
+    transform: translatex(-50%);
+    z-index: 10;
+    border-left: 2px solid rgba(128, 128, 128);
 }
 
 .section__container {
-    max-width: 500px;
+    min-width: 150px;
+    max-width: 400px;
     display: flex;
     align-items: center;
     text-align: end;
     gap: 20px;
     position: absolute;
+    z-index: 20;
 }
 
 .section__container:nth-child(odd):not(:last-child) {
-    right: calc(50% - 45px);
+    right: calc(50% - 52px);
 }
 
 .section__container:nth-child(even):not(:last-child) {
     flex-direction: row-reverse;
     text-align: start;
-    left: calc(50% - 45px);
+    left: calc(50% - 52px);
 }
 
 .container--one {
@@ -56,7 +60,7 @@ body {
 .last-image {
     position: absolute;
     top: 82%;
-    left: calc(50% - 45px);
+    left: calc(50% - 50px);
 }
 
 .section__container-content {
@@ -65,7 +69,7 @@ body {
 
 .section__container-date,
 .section__container-heading {
-    margin: 0;
+    margin: 10px;
 }
 
 .section__container-paragraph {
@@ -73,18 +77,22 @@ body {
     color: grey;
 }
 
-.section__container-image-wrapper {
-    width: 90px;
-    height: 90px;
-    background-color: rgba(128, 128, 128, 0.496);
+.section__image-wrapper {
+    width: 104px;
+    height: 104px;
+    background-color: rgba(128, 128, 128);
     border-radius: 50%;
     position: relative;
 }
 
+.section__container-image {
+    object-fit: cover;
+}
+
 .section__container-image,
 .section__last-image {
-    width: 90%;
-    height: 90%;
+    width: 92%;
+    height: 92%;
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -93,23 +101,25 @@ body {
 }
 
 .section__last-image {
-    background-color: rgb(255, 200, 0);
+    background-color: rgb(255, 179, 0);
     position: relative;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .last--image {
     position: absolute;
     top: 80%;
-    right: calc(50% - 45px);
+    right: calc(50% - 52px);
+    z-index: 20;
 }
 
 .section__last-image-text {
-    font-size: 14px;
+    font-size: 16px;
+    text-align: center;
     font-weight: bold;
     color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
