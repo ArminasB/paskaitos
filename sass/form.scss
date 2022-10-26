@@ -24,14 +24,19 @@
 
         &__input-id {
             border: none;
+            outline: none;
         }
 
         &__input {
             outline: none;
             padding: $padding-xs $padding-small;
-            border-radius: $border-radius-xs 0 0 $border-radius-xs;
+            border-radius: $border-radius-xs;
             border: $input-border;
             background-color: $input-background;
+        }
+
+        &__input:focus {
+            border: $input-outline;
         }
     
         &__input::placeholder {
@@ -53,6 +58,7 @@
 
 .input--task {
     flex: 1;
+    border-radius: $border-radius-xs 0 0 $border-radius-xs;
 }
 
 .submit--add {
