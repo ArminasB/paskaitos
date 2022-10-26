@@ -61,6 +61,10 @@
         }
 }
 
+.heading--your-tasks {
+    margin-bottom: 0;
+}
+
 .input--task {
     flex: 1;
     border-radius: $border-radius-xs 0 0 $border-radius-xs;

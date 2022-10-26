@@ -118,6 +118,10 @@ body {
   color: rgb(114, 17, 17);
 }
 
+.heading--your-tasks {
+  margin-bottom: 0;
+}
+
 .input--task {
   flex: 1;
   border-radius: 5px 0 0 5px;
