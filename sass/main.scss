@@ -1,5 +1,5 @@
 .main {
-    background-color: rgb(247, 238, 227);
+    background-color: $background-main;
     display: grid;
     grid-template-columns: auto minmax(400px, 700px) auto;
     grid-template-areas: 
