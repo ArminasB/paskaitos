@@ -4,7 +4,7 @@
         flex-direction: column;
         gap: $gap-mid;
         padding: $padding-mid $padding-large 40px $padding-large;
-        border-radius: $border-radius-small;
+        border-radius: $border-radius-xs;
         box-shadow: $shadow-basic;
 
         &__heading {
@@ -28,8 +28,8 @@
 
         &__input {
             outline: none;
-            padding: 5px $padding-small;
-            border-radius: $border-radius-small 0 0 $border-radius-small;
+            padding: $padding-xs $padding-small;
+            border-radius: $border-radius-xs 0 0 $border-radius-xs;
             border: $input-border;
             background-color: $input-background;
         }
@@ -57,12 +57,12 @@
 
 .submit--add {
     padding: 8px $padding-large;
-    border-radius: 0 $border-radius-small $border-radius-small 0;
+    border-radius: 0 $border-radius-xs $border-radius-xs 0;
 }
 
 .submit--edit {
     padding: 8px 0;
-    border-radius: $border-radius-small;
+    border-radius: $border-radius-xs;
     text-align: center;
 }
 
