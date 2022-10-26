@@ -31,9 +31,6 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.header__logo-image {
-  height: 40px;
-}
 .header__social-logo {
   width: 20px;
   height: 20px;
@@ -47,7 +44,7 @@ body {
 .main {
   background-color: rgb(247, 238, 227);
   display: grid;
-  grid-template-columns: auto minmax(400px, 700px) auto;
+  grid-template-columns: auto minmax(350px, 700px) auto;
   grid-template-areas: ". main-wrapper .";
 }
 .main__wrapper {
@@ -60,6 +57,7 @@ body {
 .main__return-button {
   text-decoration: none;
   text-align: center;
+  box-shadow: 0 0 10px 3px lightgrey;
   background-color: rgb(35, 35, 35);
   color: white;
   padding: 10px 70px;
@@ -113,7 +111,8 @@ body {
 }
 .form__input-error {
   font-size: 12px;
-  color: red;
+  font-weight: bolder;
+  color: rgb(114, 17, 17);
 }
 
 .input--task {

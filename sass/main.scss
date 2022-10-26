@@ -1,7 +1,7 @@
 .main {
     background-color: $background-main;
     display: grid;
-    grid-template-columns: auto minmax(400px, 700px) auto;
+    grid-template-columns: auto minmax(350px, 700px) auto;
     grid-template-areas: 
     ". main-wrapper ." ;
     
@@ -16,6 +16,7 @@
     &__return-button {
         text-decoration: none;
         text-align: center;
+        box-shadow: $shadow-basic;
         background-color: rgb(35, 35, 35);
         color: white;
         padding: $padding-small 70px;
