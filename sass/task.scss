@@ -1,7 +1,6 @@
 .task {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 0 $padding-large 0 $padding-mid;
     background-color: $background-basic;
     border-radius: $border-radius-xs;
@@ -9,10 +8,13 @@
 
     &__name {
         font-weight: lighter;
+        overflow-wrap: break-word;
+        max-width: 200px;
     }
 
     &__left {
         display: flex;
+        flex: 1;
         align-items: center;
         gap: $gap-mid;
     }
