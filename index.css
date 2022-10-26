@@ -92,19 +92,19 @@ body {
   border: none;
 }
 .form__input {
-  outline: rgba(211, 211, 211, 0.381);
+  outline: none;
   padding: 5px 10px;
   border-radius: 5px 0 0 5px;
   border: 1px solid rgba(211, 211, 211, 0.479);
-  background-color: rgba(219, 219, 219, 0.264);
+  background-color: rgba(162, 156, 156, 0.264);
 }
 .form__input::placeholder {
   font-weight: bold;
-  color: rgb(177, 175, 175);
+  color: rgb(151, 151, 151);
 }
 .form__input-submit {
   color: white;
-  background-color: rgb(141, 43, 141);
+  background-color: rgb(166, 60, 166);
   border: none;
 }
 .form__input-error {

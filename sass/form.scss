@@ -1,5 +1,5 @@
 .form {
-        background-color: white;
+        background-color: $background-basic;
         display: flex;
         flex-direction: column;
         gap: $gap-mid;
@@ -27,27 +27,27 @@
         }
 
         &__input {
-            outline: rgba(211, 211, 211, 0.381);
+            outline: none;
             padding: 5px $padding-small;
-            border-radius: 5px 0 0 5px;
-            border: 1px solid rgba(211, 211, 211, 0.479);
-            background-color: rgba(219, 219, 219, 0.264);
+            border-radius: $border-radius-small 0 0 $border-radius-small;
+            border: $input-border;
+            background-color: $input-background;
         }
     
         &__input::placeholder {
             font-weight: bold;
-            color: rgb(177, 175, 175);
+            color: rgb(151, 151, 151);
         }
     
         &__input-submit {
             color: white;
-            background-color: rgb(141, 43, 141);
+            background-color: $buttons;
             border: none;
         }
     
         &__input-error {
             font-size: 12px;
-            color: red;
+            color: $error-color;
         }
 }
 
@@ -57,7 +57,7 @@
 
 .submit--add {
     padding: 8px $padding-large;
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 $border-radius-small $border-radius-small 0;
 }
 
 .submit--edit {

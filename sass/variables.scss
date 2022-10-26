@@ -1,9 +1,15 @@
+$background-basic: white;
 $shadow-basic: 0 0 10px 3px lightgrey;
+$input-border: 1px solid rgba(211, 211, 211, 0.479);
+$input-background: rgba(162, 156, 156, 0.264);
 $shadow-focused: 5px 10px 20px 3px rgb(112, 112, 112);
+$error-color: red;
+$buttons: rgb(166, 60, 166);
 $border-radius-small: 5px;
 $padding-small: 10px;
 $padding-mid: 20px;
 $padding-large: 50px;
+$padding-xl: 100px;
 $gap-small: 10px;
 $gap-mid: 20px;
 $gap-large: 50px;
