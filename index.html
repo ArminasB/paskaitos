@@ -5,87 +5,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Your Tasks</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <main>
-        <article class="article">
-            <section class="section">
-                <div class="section__container container--one">
-                    <div class="section__container-content">
-                        <h3 class="section__container-date">2009-2011</h3>
-                        <h3 class="section__container-heading">Our Humble Belongings</h3>
-                        <p class="section__container-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Ducimus, nobis earum inventore modi
-                            dolore, possimus quibusdam!
-                        </p>
-                    </div>
-
-                    <div class="section__image-wrapper">
-                        <img src="assets\images\jpg\mobile.jpg" alt="sunflower" class="section__container-image">
-                    </div>
-
+    <header class="header">
+        <div class="header__wrapper">
+            <nav class="header__navigation">
+                <a href="#" class="header__logo-link"><img src="assets\images\webp\todo.webp" alt="logo"
+                        class="header__logo-image"></a>
+                <ul class="header__list">
+                    <li><a href="#"><img class="header__social-logo" src="assets\images\jpg\facebook.svg"
+                                alt="facebook"></a></li>
+                    <li><a href="#"><img class="header__social-logo" src="assets\images\jpg\twitter.svg"
+                                alt="twitter"></a>
+                    </li>
+                    <li><a href="#"><img class="header__social-logo" src="assets\images\jpg\linkedin.svg"
+                        alt="linkedin"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__wrapper">
+            <form class="form">
+                <h1 class="form__heading">Your Tasks</h1>
+                <div class="form__input-section">
+                    <input class="form__input input--task" type="text" name="task" id="task" placeholder="e.g. wash dishes">
+                    <input class="form__input-submit submit--add" type="submit" value="Add">
                 </div>
-                <div class="section__container container--two">
-                    <div class="section__container-content">
-                        <h3 class="section__container-date">March 2011</h3>
-                        <h3 class="section__container-heading">An Agency Is Born</h3>
-                        <p class="section__container-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Ducimus, nobis earum inventore modi
-                            dolore, possimus quibusdam!
-                        </p>
+                <span class="form__input-error">There Was An Error</span>
+            </form>
+            <div class="tasks">
+                <div class="task first--task">
+                    <div class="task__left">
+                        <a class="check--hidden"href="#"><img class="task__icon-button" src="assets\images\jpg\circle-check-solid.svg"
+                                alt="done-mark"></a>
+                        <h3 class="task__name">Take Out Trashes</h3>
                     </div>
-
-                    <div class="section__image-wrapper">
-                        <img src="assets\images\jpg\tree-736885__480.jpg" alt="sunflower" class="section__container-image">
+                    <div class="task__right">
+                        <a href="edit-task.html"><img class="task__icon-button" src="assets\images\jpg\pen-to-square-solid.svg"
+                                alt="edit"></a>
+                        <a href="#"><img class="task__icon-button" src="assets\images\jpg\trash-solid.svg" alt="delete"></a>
                     </div>
-
+    
                 </div>
-                <div class="section__container container--three">
-                    <div class="section__container-content">
-                        <h3 class="section__container-date">December 2012</h3>
-                        <h3 class="section__container-heading">Transition To Full Service</h3>
-                        <p class="section__container-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Ducimus, nobis earum inventore modi
-                            dolore, possimus quibusdam!
-                        </p>
+                <div class="task">
+                    <div class="task__left">
+                        <a href="#"><img class="task__icon-button" src="assets\images\jpg\circle-check-solid.svg"
+                                alt="done-mark"></a>
+                        <h3 class="task__name task--done">Walk The Dog</h3>
                     </div>
-
-                    <div class="section__image-wrapper">
-                        <img src="assets\images\jpg\0_rZecOAy_WVr16810.jfif" alt="sunflower" class="section__container-image">
-                    </div>
-
-                </div>
-                <div class="section__container container--four">
-                    <div class="section__container-content">
-                        <h3 class="section__container-date">July 2014</h3>
-                        <h3 class="section__container-heading">Phase Two Expansion</h3>
-                        <p class="section__container-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Ducimus, nobis earum inventore modi
-                            dolore, possimus quibusdam!
-                        </p>
-                    </div>
-
-                    <div class="section__image-wrapper">
-                        <img src="assets\images\jpg\photo-1453728013993-6d66e9c9123a.jfif" alt="sunflower" class="section__container-image">
-                    </div>
-
-                </div>
-
-                <div class="section__image-wrapper last--image">
-                    <div class="section__last-image">
-                        <span class="section__last-image-text">
-                            Be Part Of Our Story
-                        </span>
+                    <div class="task__right">
+                        <a href="#"><img class="task__icon-button" src="assets\images\jpg\pen-to-square-solid.svg"
+                                alt="edit"></a>
+                        <a href="#"><img class="task__icon-button" src="assets\images\jpg\trash-solid.svg" alt="delete"></a>
                     </div>
                 </div>
+            </div>
+        </div>
 
-
-                </div>
-            </section>
-        </article>
+        </div>
     </main>
 </body>
 

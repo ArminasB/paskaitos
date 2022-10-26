@@ -1,0 +1,25 @@
+.main {
+    background-color: rgb(247, 238, 227);
+    display: grid;
+    grid-template-columns: auto minmax(400px, 700px) auto;
+    grid-template-areas: 
+    ". main-wrapper ." ;
+    
+    &__wrapper {
+        grid-area: main-wrapper;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: $gap-large;
+    }
+
+    &__return-button {
+        text-decoration: none;
+        text-align: center;
+        background-color: rgb(35, 35, 35);
+        color: white;
+        padding: $padding-small 70px;
+        border-radius: $border-radius-small;
+        align-self: center;
+    }
+}

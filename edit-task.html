@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Task</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <nav class="header__navigation">
+                <a href="#" class="header__logo-link"><img src="assets\images\webp\todo.webp" alt="logo"
+                        class="header__logo-image"></a>
+                <ul class="header__list">
+                    <li><a href="#"><img class="header__social-logo" src="assets\images\jpg\facebook.svg"
+                                alt="facebook"></a></li>
+                    <li><a href="#"><img class="header__social-logo" src="assets\images\jpg\twitter.svg"
+                                alt="twitter"></a>
+                    </li>
+                    <li><a href="#"><img class="header__social-logo" src="assets\images\jpg\linkedin.svg"
+                        alt="linkedin"></a></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__wrapper">
+            <form class="form" action="index.html" method="POST">
+                <h1 class="form__heading">Edit Task</h1>
+                <div class="form__input-group">
+                    <label for="task-id">Task ID</label>
+                    <input class="form__input-id" type="number" name="task-id" id="task-id" value="123456789" readonly>
+                    <label for="task-name">Name</label>
+                    <input class="form__input" type="text" name="task-name" id="task-name" value="Take out trashes">
+                    <label for="completed">Completed</label>
+                    <input type="checkbox" name="completed" id="completed">
+                </div>
+                <input class="form__input-submit submit--edit" type="submit" value="Edit">
+                <span class="form__input-error edit-task--error">There Was An Error</span>
+            </form>
+            <a class="main__return-button" href="index.html">Back To Tasks</a>
+        </div>
+    </main>
+</body>
+
+</html>

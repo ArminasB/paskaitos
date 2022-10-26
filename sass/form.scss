@@ -1,0 +1,73 @@
+.form {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        gap: $gap-mid;
+        padding: $padding-mid $padding-large 40px $padding-large;
+        border-radius: $border-radius-small;
+        box-shadow: $shadow-basic;
+
+        &__heading {
+            text-align: center;
+        }
+
+        &__input-section {
+            display: flex;
+        }
+        
+        &__input-group {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            row-gap: $gap-small;
+            align-items: center;
+        }
+
+        &__input-id {
+            border: none;
+        }
+
+        &__input {
+            outline: rgba(211, 211, 211, 0.381);
+            padding: 5px $padding-small;
+            border-radius: 5px 0 0 5px;
+            border: 1px solid rgba(211, 211, 211, 0.479);
+            background-color: rgba(219, 219, 219, 0.264);
+        }
+    
+        &__input::placeholder {
+            font-weight: bold;
+            color: rgb(177, 175, 175);
+        }
+    
+        &__input-submit {
+            color: white;
+            background-color: rgb(141, 43, 141);
+            border: none;
+        }
+    
+        &__input-error {
+            font-size: 12px;
+            color: red;
+        }
+}
+
+.input--task {
+    flex: 1;
+}
+
+.submit--add {
+    padding: 8px $padding-large;
+    border-radius: 0 5px 5px 0;
+}
+
+.submit--edit {
+    padding: 8px 0;
+    border-radius: $border-radius-small;
+    text-align: center;
+}
+
+
+
+.edit-task--error {
+    text-align: center;
+}

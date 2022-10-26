@@ -1,0 +1,36 @@
+.header {
+    display: grid;
+    grid-template-columns: 20px 1fr 20px;
+    grid-template-areas: 
+    ". header-wrapper .";
+    padding-top: $padding-mid;
+    box-shadow: 0 0 3px 3px lightgrey;
+    position: relative;
+    z-index: 1;
+
+    &__wrapper {
+        grid-area: header-wrapper;
+    }
+
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo-image {
+        height: 40px;
+    }
+
+    &__social-logo {
+        width: 20px;
+        height: 20px;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        gap: $gap-mid;
+
+    }
+}
